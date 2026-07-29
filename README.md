@@ -19,30 +19,26 @@
 - ruff
 - black
 
-## 项目结构
-student-manager
-│
-├── src
-│ └── student_manager
-│ ├── main.py
-│ ├── manager.py
-│ ├── student.py
-│ └── database.py
-│
-├── tests
-│
-├── data
-│
-├── pyproject.toml
-└── README.md
-
+## 文件结构
+- student-manager/
+  - src/
+    - student_manager/
+      - main.py
+      - manager.py
+      - student.py
+      - database.py
+  - tests/
+  - data/
+  - pyproject.toml
+  - README.md
 
 ## 运行
 
 安装依赖：
 
 ```bash
-uv sync```
+uv sync
+```
 
 运行：
 
