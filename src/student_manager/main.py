@@ -1,6 +1,13 @@
 from student_manager.manager import StudentManager
 from student_manager.student import Student
 
+def get_valid_age():
+    while True:
+        try:
+            age = int(input("请输入年龄: "))
+            return age
+        except ValueError:
+            print("年龄必须输入数字")
 
 def main():
 
@@ -30,15 +37,10 @@ def main():
 
             student_id = input("学号:")
             name = input("姓名:")
+            age = get_valid_age()
 
-            try:
-
-                age = int(input("年龄："))
-
-            except ValueError:
-
-                print("年龄必须输入数字")
-                continue
+            
+            
         
 
             try:
@@ -76,7 +78,10 @@ def main():
 
             name = input("新姓名:")
 
-            age = int(input("新年龄:"))
+            age = get_valid_age()
+
+            
+            
 
 
             manager.update_student(
